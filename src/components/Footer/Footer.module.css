@@ -1,0 +1,39 @@
+.footer {
+  background-color: #7c0080;   /* azul oscuro */
+  color: white;
+  text-align: center;
+  padding: 20px;
+ 
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px;
+}
+
+.social-icons img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.img1 {
+  width: 100px;   /* ancho fijo de los iconos */
+  height: auto;   
+}
+
+
+.footer p {
+  margin: 0;
+  font-size: 12px;
+
+}
+
+
+

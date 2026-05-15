@@ -1,0 +1,20 @@
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right,#00fffb);
+  color: rgb(77, 24, 24);
+  width: 1060px;
+}
+
+.btn {
+  background-color: #ffcc00;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #ffe066;
+}

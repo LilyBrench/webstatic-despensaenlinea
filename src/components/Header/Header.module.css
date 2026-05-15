@@ -1,0 +1,148 @@
+/*Header.module.css*/
+.header{
+    background: radial-gradient(circle, #ffcc00, #00fffb);
+    color:azure;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(93, 125, 121, 0.937);
+    height:80px;        /* altura fija */
+    width: 50px;
+  padding: 10px 20px;
+   
+}
+
+.left{
+    flex: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.center{
+    flex: 1;
+    text-align: center;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* logo y texto alineados a la izquierda */
+  gap: 12px; /* espacio entre logo y título */
+  height: 100px;
+}
+
+.logo {
+  width: 100px;   /* tamaño uniforme */
+  height: 200px;
+  object-fit: contain;
+ 
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 17px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav a {
+  color: rgb(3, 135, 179);
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.nav a:hover {
+ 
+  color: #1a5245;
+}
+
+/* Botón hamburguesa */
+.menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  padding: 12px 20px;
+  color: white;
+  text-decoration: none;
+}
+/* color de botones de menu */
+.menu a:hover {
+  background-color: #0bedde;
+}
+
+/* Submenú oculto */
+ .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  background-color: #0bedde;
+  margin: 0;
+  padding: 0;
+  min-width: 180px;
+}
+
+/* Mostrar submenú al pasar el mouse */
+.submenu:hover .dropdown {
+  display: block;
+}
+
+.dropdown li a {
+  padding: 10px 15px;
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.dropdown li a:hover {
+  background-color: #05e2e2;
+}
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #cbe201;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+  }
+}

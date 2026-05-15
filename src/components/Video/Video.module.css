@@ -1,0 +1,36 @@
+.videoSection {
+  padding: 100px 100px;
+  text-align: center;
+  background: radial-gradient(circle, #ffcc00, #00fffb);
+  border-radius: 18px;
+
+  max-width: 600px;   /* ancho máximo del contenedor */
+  margin: 0 auto;
+}
+
+.videoSection h2 {
+  color: #021015;
+  margin-bottom: 20px;
+}
+
+.videoContainer {
+  position: relative;
+  padding-bottom: 60%;
+  height: 0;
+  overflow: hidden;  
+  display: flex;
+  justify-content: center;
+  border-radius: 18px;
+
+  max-width: 500px;   /* ancho máximo del contenedor */
+  margin: 0 auto;
+}
+
+.videoContainer iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+}

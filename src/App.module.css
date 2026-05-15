@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+:global(body) {
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+    background-color: aqua;
+    color: rgb(116, 113, 113);
+    font-size: 15px;
+}
