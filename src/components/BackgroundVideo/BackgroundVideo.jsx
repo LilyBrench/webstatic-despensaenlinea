@@ -3,7 +3,7 @@ import "./BackgroundVideo.css";
 const BackgroundVideo = () => (
   <div className="video-background">
     <video autoPlay loop muted playsInline>
-        <source src="public/videos/fondo.mp4" type="video/mp4" />
+        <source src="/fondo.mp4" type="video/mp4" />
 
       Tu navegador no soporta video en HTML5.
     </video>
