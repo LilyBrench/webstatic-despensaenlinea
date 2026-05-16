@@ -149,6 +149,7 @@ promoviendo la identidad cultural y el orgullo por lo local, mientras impulsamos
        name="contacto" 
             method="POST" 
             data-netlify="true"
+            action="/.netlify/functions/guardarFormulario"
             className={styles.form}
           >
       <input type="hidden" name="form-name" value="contacto"/>
