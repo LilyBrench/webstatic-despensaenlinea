@@ -154,10 +154,10 @@ promoviendo la identidad cultural y el orgullo por lo local, mientras impulsamos
           >
       <input type="hidden" name="form-name" value="contacto"/>
 
-      <CampoInput  name="nombre" type="text" required />
-      <CampoInput  name="direccion" type="text" required />
-      <CampoTextarea  name="mensaje" required />
-      <CampoInput  name="correo" type="email" required />
+      <CampoInput  label="Nombre" name="nombre" type="text" required />
+      <CampoInput  label="Dirección" name="direccion" type="text" required />
+      <CampoTextarea label="Mensaje" name="mensaje" required />
+      <CampoInput  label="Correo electrónico" name="correo" type="email" required />
       <button className={styles.btn}>Enviar</button>
     
   </form>
