@@ -178,15 +178,21 @@ promoviendo la identidad cultural y el orgullo por lo local, mientras impulsamos
         <center><h2>Contacto</h2></center>
         <p>Envíanos tu mensaje y te contactamos inmediatamente.</p>
 
-       <form name="contacto" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contacto" />
+       <form
+  name="contacto"
+  method="POST"
+  data-netlify="true"
+  action="/gracias"
+>
+  <input type="hidden" name="form-name" value="contacto" />
 
-          <input type="text" name="nombre" placeholder="Nombre" required />
-          <input type="email" name="correo" placeholder="Correo electrónico" required />
-          <textarea name="mensaje" placeholder="Mensaje"></textarea>
+  <input type="text" name="nombre" placeholder="Nombre" required />
+  <input type="email" name="correo" placeholder="Correo electrónico" required />
+  <textarea name="mensaje" placeholder="Mensaje"></textarea>
 
-          <button type="submit">Enviar</button>
-        </form>
+  <button type="submit">Enviar</button>
+</form>
+
       </section>
     </main>
   );
