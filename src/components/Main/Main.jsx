@@ -174,7 +174,11 @@ promoviendo la identidad cultural y el orgullo por lo local, mientras impulsamos
   <center><h2>Contacto</h2></center>
   <center><p>Envianos tu mensaje y te contactamos inmediatamente.</p></center>
 <p>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}
+       name="contacto" method="POST" data-netlify="true"
+        input type="hidden" name="form-name" value="contacto" />
+
+
       <input
         type="text"
         name="nombre"
