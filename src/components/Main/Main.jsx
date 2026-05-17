@@ -124,55 +124,6 @@ promoviendo la identidad cultural y el orgullo por lo local, mientras impulsamos
 </section>
 
 
-
-
-
-
-
-
-
-{/* Sección contactanos*/}
-<section id="contacto" className={styles.about}>
-  <center><h2>Contacto</h2></center>
-  <center><p>Envianos tu mensaje y te contactamos inmediatamente.</p></center>
-<p>
-      <main className={styles.main}>
-      {/* Sección Quiénes somos */}
-      <section id="quienes-somos" className={styles.about}>
-        <center><h2>¿Quiénes somos?</h2></center>
-        <p>Despensa en Línea somos una iniciativa dedicada a acercar productos básicos de calidad directamente a tu hogar.</p>
-      </section>
-
-      {/* Sección Misión */}
-      <section id="mision" className={styles.about}>
-        <center><h2>Misión</h2></center>
-        <p>Nuestra misión es ser un puente entre productores y consumidores.</p>
-      </section>
-
-      {/* Sección Visión */}
-      <section id="vision" className={styles.about}>
-        <center><h2>Visión</h2></center>
-        <p>Convertirnos en la plataforma líder de distribución de productos de despensa en México.</p>
-      </section>
-
-      {/* Sección Productos */}
-      <section id="productos" className={styles.about}>
-        <center><h2>Productos que ofrecemos</h2></center>
-        <div className={styles.productGrid}>
-          <ProductCard image="..." title="ACEITES" price="00001" />
-          <ProductCard image="..." title="BEBIDAS" price="00002" />
-          <ProductCard image="..." title="BOTANAS" price="00003" />
-          <ProductCard image="..." title="BEBES" price="00004" />
-        </div>
-      </section>
-
-      {/* Sección Ubicación */}
-      <section id="ubicacion" className={styles.about}>
-        <center><h2>Ubicación</h2></center>
-        <p>Nos encontramos en Villa de Canalejas, Jilotepec de Molina Enríquez, Estado de México.</p>
-        <Mapa />
-      </section>
-
       {/* Sección Contacto */}
       <section id="contacto" className={styles.about}>
         <center><h2>Contacto</h2></center>
