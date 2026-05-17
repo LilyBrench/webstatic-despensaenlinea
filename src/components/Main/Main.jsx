@@ -3,57 +3,11 @@ import styles from './Main.module.css';
 import Mapa from '../Mapa/Mapa';
 import ProductCard from '../ProductCard/ProductCard';
 import React, { useState } from "react";
-import CampoInput from '../Formulario/CampoInput';
-import CampoTextarea from '../Formulario/CampoTextarea';
-
-
-
-
-
-
-
 
 
 const Main = () => (
   <main className={styles.main}>
-// 1. Estado del formulario
-  const [formData, setFormData] = useState({
-    nombre: "",
-    correo: "",
-    mensaje: "",
-  });
 
-  // 2. Manejo de cambios
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  // 3. Manejo de envío
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-      const response = await fetch("http://localhost:4000/api/formulario", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        alert("Formulario enviado correctamente");
-      } else {
-        alert("Error al enviar el formulario");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      alert("Error de conexión con el servidor");
-    }
-  };
-
-  // 4. JSX del componente
-  return (
-    <main className={styles.main}>
-    
 
     
     {/* Sección Quiénes somos */}
@@ -224,31 +178,13 @@ promoviendo la identidad cultural y el orgullo por lo local, mientras impulsamos
         <center><h2>Contacto</h2></center>
         <p>Envíanos tu mensaje y te contactamos inmediatamente.</p>
 
-        <form onSubmit={handleSubmit} name="contacto" method="POST" data-netlify="true">
+       <form name="contacto" method="POST" data-netlify="true">
           <input type="hidden" name="form-name" value="contacto" />
 
-          <input
-            type="text"
-            name="nombre"
-            placeholder="Nombre"
-            value={formData.nombre}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            name="correo"
-            placeholder="Correo electrónico"
-            value={formData.correo}
-            onChange={handleChange}
-            required
-          />
-          <textarea
-            name="mensaje"
-            placeholder="Mensaje"
-            value={formData.mensaje}
-            onChange={handleChange}
-          ></textarea>
+          <input type="text" name="nombre" placeholder="Nombre" required />
+          <input type="email" name="correo" placeholder="Correo electrónico" required />
+          <textarea name="mensaje" placeholder="Mensaje"></textarea>
+
           <button type="submit">Enviar</button>
         </form>
       </section>
